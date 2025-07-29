@@ -1,22 +1,26 @@
-# monitor_mysql_binary_logging
-Shell script to automatically purge MySQL binaries logs
+## Troker Wallet
 
-This script is designed to be run by cron every X minutes
-e.g. :
-`*/5 * * * * /root/scripts/monitor_mysql_binary_logging.sh >/dev/null`
+### Overview
+Troker Wallet is a cutting-edge digital wallet, enabling seamless cross-chain transactions and fiat-to-crypto conversions.
 
-Adapt with your settings
+### Setup
 
-- `export MYSQL_PWD=XXXXXXX
-`
-WHERE XXXXXXX is your MySQL root password
+**Prerequisites:**
+- Node.js and npm (or Yarn) installed locally.
+- A suitable text editor or IDE for code editing.
 
-- `FOLDER2MONITOR=/srv/log/mysql/
-`
-WHERE FOLDER2MONITOR is the location with your MySQL binary logs. It should ideally be a dedicated partition
+**Installation Steps:**
 
-- `MAXPERCENTAGE2USE=79
-` WHERE 79 is the max used size percentage of the partition containing your MySQL binary logs.
+1. Clone the repository: `git clone https://github.com/your-username/troker-wallet.git`
+2. Install project dependencies: `npm install` or `yarn install`
+3. Rename `.env.example` to `.env` and customize the configuration as needed.
+4. Run the development server: `npm run dev`
+5. Access the wallet UI at `http://localhost:3000`.
 
-- `MINIMUMBINLOG2KEEP=5`
-WHERE 5 is the minimum number of binary log files yoy want to keep. MAXPERCENTAGE2USE is overwritten by this setting
+### Contributing
+
+Troker Wallet welcomes contributions! Please refer to the contribution guidelines in the `CODE_GUIDELINES.md` file for details.
+
+### License
+
+Copyright © 2023 All Lives Meta. Licensed under the Apache License, Version 2.0.
